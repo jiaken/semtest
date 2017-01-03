@@ -14,7 +14,7 @@
 </head>
 <body>
 Hello, SB
-左志来：${l1}     其他：${l2}              其他：${l3}
+左志来：${l1}     其他：${l2}          其他：${l3}
 <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
 <script language="JavaScript">
     $(document).ready(function() {

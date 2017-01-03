@@ -29,7 +29,7 @@ public class ShowController extends HttpServlet {
         request.setAttribute("l2",bb[1]);
         request.setAttribute("l3",bb[2]);
 
-        request.getRequestDispatcher("page/show.jsp").forward(request,response);
+        request.getRequestDispatcher("page/yonglishow.jsp").forward(request,response);
     }
     public double[] percent (String l1,String l2,String l3){
 

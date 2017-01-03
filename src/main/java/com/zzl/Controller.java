@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * Created by Administrator on 2016/12/15.
  */
-@WebServlet("/dd")
+@WebServlet("/index")
 public class Controller extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException{
@@ -25,6 +25,6 @@ public class Controller extends HttpServlet {
         DateFormat dateFormat = new SimpleDateFormat("yyy-MM-dd HH:mm:ss");
         String currentTime = dateFormat.format(new Date());
         request.setAttribute("currentTime",currentTime);
-        request.getRequestDispatcher("index.jsp").forward(request,response);
+        request.getRequestDispatcher("page/index.jsp").forward(request,response);
     }
 }
